@@ -5,10 +5,12 @@
 }
 
 main{
-    background-color: rgb(29, 28, 28);
+    /* background-color: rgb(29, 28, 28); */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 100vh;
 }
 
 #board{
@@ -32,4 +34,47 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 100px;
+}
+
+#oponentSelection{
+    /* display: none; */
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#display-result-div{
+    display: none;
+}
+
+#display-winner-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: none;
 }
