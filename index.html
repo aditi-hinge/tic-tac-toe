@@ -10,10 +10,8 @@
 <body>
     <main>
         <div style="background-color: brown;">
-            <div id="options">
-                <button id="x">x</button>
-                <button id="o">o</button>
-            </div>
+            <div>TIC-TAC-TOE</div>
+            <div id="display-result-div">PLAYER-<span id="player-name"></span>'s TURN</div>
             <div id="board">
                 <div class="area" id="0"></div>
                 <div class="area" id="1"></div>
@@ -27,7 +25,30 @@
             </div>
             <button id="reset">RESET</button>
         </div>
-        
+        <div id="oponentSelection">PLAY AGAINST
+            <button id="friendOponent">FRIEND</button>
+            <button id="computer">COMPUTER</button>
+        </div>
+        <form id="form">
+            <div>
+                <label for="player-X">X</label>
+                <input type="text" id="player-X" placeholder="Player X's Name" required>
+            </div>
+            <div>
+                <label for="player-O">O</label>
+                <input type="text" id="player-O" placeholder="Player O's Name" required>
+            </div>
+            <div>
+                <button type="submit" id="submit">OKAY</button>
+            </div>
+        </form>
+        <div id="display-winner-message">
+            <div><h3>CONGRATULATIONS!</h3></div>
+            <h3><div id="winner-name"></div></h3>
+            <h3><div>HAS WON!</div></h3>
+            <button id="new-game">NEW GAME</button>
+            <button>MAIN MENU</button>
+        </div>
     </main>
 
     <script src="./script.js"></script>
